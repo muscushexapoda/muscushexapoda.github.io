@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html id="p1">
+
+<head>
+    <title>Muscus Hexapoda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/musco.png">
+</head>
+
+<body id="p1">
+
+    <!-- Navbar (sit on top)	
+<div class="topnav" style="letter-spacing:4px;">
+  <a id="imgnav" href="index.html"><img src="img/musco.png" style="width: 2%;" ></a>
+  <a class="active" href="#home"><strong>Musco</strong></a>
+  <a href="p3.html">Origini Musco</a>
+  <a href="p2.html">Storie e Leggende</a>	 
+</div> 
+	-->
+
+    <div class="navbar" style="letter-spacing:4px;">
+        <a href="index.html"><img class="imgnav" src="img/musco.png"></a>
+        <a href="#home" class="active"><strong>MUSCO</strong></a>
+        <a href="p2.html">LEGGENDE</a>
+        <a href="p3.html">ORIGINE</a>
+    </div>
+
+    <!-- Header -->
+    <header id="home">
+
+        <div class="header-content">
+            <img src="img/sfondo.png" width="100%">
+            <h1>CONOSCIAMO <br> IL MUSCO <a href="https://www.instagram.com/musco_hexapoda/"><i class="fa fa-instagram"></i></a></h1>
+            <div style="margin: 24px 0;">
+            </div>
+        </div>
+    </header>
+
+    <!-- identity section -->
+    <div id="identity">
+        <h1 class="general">IDENTITÀ</h1>
+    </div>
+
+    <section class="content">
+        <div class="container">
+            <div class="content">
+                <img src="img/Carta_didentita.png">
+
+            </div>
+        </div>
+
+        <section class="slider">
+
+            <div class="slide">
+                <img src="img/riproduzione.png" style="width: 400px; height: 500px;">
+            </div>
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/nutrizione.png" style="width: 400px; height: 500px;">
+                </div>
+
+                <div class="slide">
+                    <img src="img/comunicazione.png" style="width: 400px; height: 500px;">
+                </div>
+                <div class="slide">
+                    <img src="img/difesa.png" style="width: 400px; height: 500px;">
+                </div>
+
+                <div class="controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <!-- Habitat-->
+    <div id="habitat">
+        <div>
+            <h1 class="general">HABITAT</h1><br>
+        </div>
+        <div class="container2">
+            <img class="ih" src="img/2h.png" style="width:35%">
+            <p class="ph">Muscus Hexapoda si trova esclusivamente nei parchi e giardini di Roma. L'abbondanza di vegetazione in questi spazi verdi urbani fornisce cibo e riparo in abbondanza per la specie. Il suo clima ideale è quello mediterraneo con il suo variare di estati calde e secche e inverni miti e piovosi.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="info">
+        <div class="endimg">
+            <img src="img/musco.png">
+        </div>
+        <h1 class="hcont2">AIUTACI A <br>SALVAGUARDARE <br>LA SPECIE</h1><br>
+        <h2 class="hcont">Puoi aiutarci con piccoli e semplici gesti</h2>
+        <p class="pcont">
+            <strong>CONOSCI</strong>
+            <strong>PROTEGGI</strong>
+            <strong>CONDIVIDI</strong></p>
+    </div>
+
+    <!-- sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-item">
+            <a href="#home"><i class="fa fa-home"></i></a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#identity"><i class="fa fa-address-card"></i></a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#habitat"><i class="fa fa-globe"></i></a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#info"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- End page content -->
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        showSlide(currentSlide);
+    </script>
+
+</body>
+
+</html>
