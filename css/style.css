@@ -1,0 +1,480 @@
+/* INDEX */
+ #index, indexhtml {
+     height: 100%;
+     margin: 0;
+     font-family: 'Arial', sans-serif;
+}
+ * {
+     box-sizing: border-box;
+}
+ #myVideo {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+}
+ a:link {
+     color: white;
+     background-color: transparent;
+     text-decoration: none;
+}
+ a:visited {
+     color: white;
+     background-color: transparent;
+     text-decoration: none;
+}
+ a:hover {
+     color: white;
+     background-color: transparent;
+}
+ a:active {
+     color: white;
+     background-color: transparent;
+}
+ .button {
+     background-color: rgb(0,0,0);
+    /* Fallback color */
+     background-color: rgba(0,0,0, 0.6);
+    /* Black w/opacity/see-through */
+     font-size: 28px;
+     padding: 15px;
+     width: 200px;
+     transition: all 0.5s;
+     cursor: pointer;
+     border-radius: 10px;
+     margin: 5px;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     position: fixed;
+     text-align: center;
+}
+ .button span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+}
+ .button span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+}
+ .button:hover span {
+     padding-right: 25px;
+}
+ .button:hover span:after {
+     opacity: 1;
+     right: 0;
+}
+/* FINE INDEX */
+/* PAGINA 1 */
+ #p1 {
+     font-family: "arial";
+     padding: 0;
+     margin: 0;
+}
+ h1, h2, h3, h4, h5, h6 {
+     letter-spacing: 5px;
+}
+/* home */
+ h1 {
+     position: relative;
+}
+/* Navbar .topnav {
+     background-color: #333;
+     overflow: hidden;
+}
+ #imgnav {
+     padding: 14px 16px;
+     display: inline;
+     position: absolute;
+}
+ .topnav a {
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+}
+ .topnav a:hover {
+     background-color: #d0d4a4;
+     color: black;
+}
+ .topnav a.active {
+     background-color: #d0d4a4;
+     color: white;
+}
+ */
+/* NAVBAR con logo */
+ .navbar {
+     width: 100%;
+     background-color: #333;
+     overflow: auto;
+}
+/* Navbar links */
+ .navbar a {
+     float: left;
+     text-align: center;
+     padding: 13px;
+     color: #f2f2f2;
+     text-decoration: none;
+     font-size: 17px;
+}
+ .imgnav {
+     width: 20px;
+}
+/* Current/active navbar link */
+ a.active {
+     background-color: #d0d4a4;
+     color: #fff;
+}
+/* Navbar links on mouse-over */
+ .navbar a:hover {
+     background-color: #d0d4a4;
+     color: #333;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+ @media screen and (max-width: 500px) {
+     .navbar a {
+         float: none;
+         display: block;
+    }
+}
+ .header-content h1 {
+     position: absolute;
+     top: 47%;
+     left: 27%;
+     transform: translate(-50%, -50%);
+     color: white;
+     text-align: left;
+     font-size: 70px;
+}
+ .header-content a {
+     top:120%;
+     left: 40px;
+     transform: translate(-50%, -50%);
+     color: white;
+     text-align: left;
+     font-size: 70px;
+}
+/* identity */
+ #identity h3{
+     margin: 0;
+}
+ .container {
+     height: 500px;
+     border-radius: 20px;
+     overflow: hidden;
+    /* Per assicurarsi che l'immagine non fuoriesca dai bordi arrotondati */
+     margin-left: auto;
+     margin-top: 80px;
+     margin-bottom: 20px;
+}
+ .content {
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+ img {
+     width: 100%;
+     height: 100%;
+     display: block;
+}
+ .overlay {
+     position: absolute;
+     top: 30px;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.2);
+    /* Sfondo semitrasparente nero */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     box-sizing: border-box;
+    /* Per includere il padding nel calcolo delle dimensioni */
+}
+ #identity h2, p {
+     color: white;
+     text-align: left;
+}
+ .content {
+     display: flex;
+     align-items: center;
+}
+ .image {
+     flex: 1;
+     border-radius: 20px;
+}
+ .image img {
+     max-width: 100%;
+     height: auto;
+}
+ .general {
+     padding-left: 60px;
+     padding-top: 30px;
+     color: darkgray;
+}
+ @media screen and (max-width: 500px) {
+     .header-content{
+         position:relative !important;
+    }
+     .header-content h1 {
+         position: absolute !important;
+         top: 30% !important;
+         left: 5% !important;
+         transform: translate(0%, 0%) !important;
+         color: white !important;
+         text-align: left !important;
+         font-size: 16px !important;
+    }
+     .imgnav {
+         display: inline !important;
+    }
+     .navbar a {
+         float: none;
+         display: block !important;
+    }
+     .header-content a {
+         top: 120%;
+         left: 40px;
+         transform: translate(-50%, -50%);
+         color: white;
+         text-align: left;
+         font-size: 16px;
+    }
+     .content {
+         flex-wrap: wrap;
+    }
+     .container {
+         width: 100%;
+         margin-bottom: 0px !important;
+         margin-top: 2rem !important;
+    }
+     .slide > img {
+         width: 100% !important;
+         aspect-ratio: auto !important;
+    }
+     .slider {
+         width: 100%;
+         margin: 0 0 0 0 !important;
+         padding: 0;
+    }
+     .container2 {
+         flex-wrap: wrap;
+    }
+     .ph {
+         order: 1;
+         width: 80%;
+         margin: 0 auto 0 auto !important;
+         padding: 0 0 0 0 !important;
+    }
+     .ih {
+         padding: 0 0 0 0 !important;
+         margin: 2rem auto 0px auto !important;
+         width: 80% !important;
+         order: 2;
+    }
+     .endimg {
+         margin: 0px auto 2rem auto !important;
+         width: 50% !important;
+         aspect-ratio: auto !important;
+         height: auto !important;
+         float: none !important;
+    }
+     .hcont2, .hcont {
+         margin: 0px 1rem 0px 1rem !important;
+         padding: 0px 0px 0px 0px !important;
+         text-align: center !important;
+    }
+     .hcont2 {
+         font-size: 2em !important;
+    }
+     .hcont {
+         font-size: 1.5em !important;
+    }
+     .pcont {
+         font-size: 2rem !important;
+    }
+     .sidebar {
+         display: none !important;
+    }
+     div:has(> .general){
+         text-align: center !important;
+         margin-top: 2rem !important;
+    }
+     .general {
+         margin: 0 auto 0 auto !important;
+         padding: 0 0 0 0 !important;
+    }
+}
+ .slider {
+     position: relative;
+     height: 500px;
+    /* Larghezza massima dello slider */
+     margin: 0 auto;
+     overflow: hidden;
+     border-radius: 20px;
+     margin-top: 60px;
+     margin-left: 10%;
+}
+ .slides {
+     display: flex;
+     transition: transform 0.5s ease;
+}
+ .slide {
+     min-width: 100%;
+}
+ .slide img {
+     width: 100%;
+     display: block;
+}
+ .controls {
+     position: absolute;
+     bottom: 5px;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+}
+ .prev:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+}
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+}
+ .controls button {
+     background-color: white;
+     color: #000;
+     border: none;
+     padding-bottom: 5px;
+     padding-top: 5px;
+     width: 40px;
+     border-radius: 20px;
+     margin: 0 5px;
+     cursor: pointer;
+}
+/* habitat */
+ .container2 {
+     display: flex;
+     align-items: center;
+     margin-bottom: 160px;
+     margin-top: 30px;
+}
+ .container2 img {
+     width: 100px;
+    /* Larghezza dell'immagine */
+     height: auto;
+    /* Altezza automatica per mantenere l'aspetto proporzionato */
+     margin-right: 20px;
+    /* Spazio tra l'immagine e il testo */
+}
+ .ih {
+     border-radius: 20px;
+     width: 100px;
+    /* Larghezza dell'immagine */
+     height: auto;
+    /* Altezza automatica per mantenere l'aspetto proporzionato */
+     margin-right: 20px;
+    /* Spazio tra l'immagine e il testo */
+     margin-top: 60px;
+     margin-left: 55px;
+}
+ .ph {
+     text-align: justify;
+     color: black;
+     font-size: 25px;
+     padding-left: 40px;
+     padding-right: 60px;
+     padding-top: 60px;
+}
+/* contact */
+ .hcont2 {
+     padding-left: 50px;
+     padding-top: 25px;
+     font-size: 90px;
+     color: #d0d4a4;
+     text-align: left;
+}
+ .hcont {
+     text-align: center;
+     font-size: 30px;
+     color: #d0d4a4;
+     text-align: left;
+     padding-top: 0px;
+     padding-left: 50px;
+     padding-bottom: 70px;
+}
+ .pcont {
+     text-align: center;
+     font-size: 40px;
+     color: #d0d4a4;
+     padding-bottom: 50px;
+}
+ .pcont strong {
+     color: #a6b56b;
+     padding-right: 80px;
+     padding-left: 80px;
+}
+ .endimg {
+     float: right;
+     width: 250px;
+     height: 250px;
+     margin-top: 80px;
+     margin-right: 165px;
+     margin-left: auto;
+     text-align: right;
+}
+ .endimg a:hover {
+     opacity: 0.5;
+}
+/* siderbar */
+ .sidebar {
+     position: fixed;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+}
+ .sidebar-item {
+     display: inline-block;
+     margin: 10px;
+     font-size: 35px;
+     color: #333;
+     cursor: pointer;
+}
+ .sidebar-item a {
+     opacity: 0.5;
+     color: #333;
+     cursor: pointer;
+     transition: transform 0.3s;
+}
+ .sidebar-item a i:hover {
+     color: #333;
+     transform: scale(1.3);
+}
+/* width */
+ ::-webkit-scrollbar {
+     width: 8px;
+}
+/* Track */
+ ::-webkit-scrollbar-track {
+     background: #fff;
+}
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: #d0d4a4;
+}
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+}
+/* FINE PAGINA 1 */
+ 
