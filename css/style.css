@@ -414,8 +414,8 @@ div.container5 div {
      color: black;
      font-size: 15px;
      padding-left: 60px;
-     padding-right: 40px;
-     padding-top: 40px;
+     padding-right: 50px;
+     padding-top: 60px;
 }
 
 .hstory {
@@ -427,7 +427,7 @@ div.container5 div {
 .pdes {
  color: black; 
  font-size: 11px;
- text-align: left;
+ text-align: center;
 }
 
  
