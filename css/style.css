@@ -399,18 +399,25 @@
 
 /* story */
 
-.container3 {
-     display: flex;
-     align-items: left;
-     margin-bottom: 160px;
-     margin-top: 30px;
-}
 
-.conteiner4 {
-   display: flex;
-     align-items: right;
-     margin-bottom: 160px;
-     margin-top: 30px;
+ .ps4 {
+     border-radius: 20px;
+     width: 100px;
+    /* Larghezza dell'immagine */
+     height: auto;
+    /* Altezza automatica per mantenere l'aspetto proporzionato */
+     margin-right: 20px;
+    /* Spazio tra l'immagine e il testo */
+     margin-top: 60px;
+     margin-left: 55px;
+}
+ .ps5 {
+     text-align: justify;
+     color: black;
+     font-size: 25px;
+     padding-left: 40px;
+     padding-right: 60px;
+     padding-top: 60px;
 }
 
 .hstory {
