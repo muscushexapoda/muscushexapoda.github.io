@@ -412,16 +412,16 @@ div.container5 div {
  .ps5 {
      text-align: justify;
      color: black;
-     font-size: 12px;
-     padding-left: 40px;
-     padding-right: 60px;
-     padding-top: 60px;
+     font-size: 15px;
+     padding-left: 60px;
+     padding-right: 40px;
+     padding-top: 40px;
 }
 
 .hstory {
   color: black;
   font-size: 20px;
- 
+ text-align: center; 
 }
 
 .pdes {
