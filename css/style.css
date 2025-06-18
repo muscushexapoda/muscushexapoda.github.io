@@ -424,6 +424,12 @@ div.container5 div {
   text-align: center; 
 }
 
+.con5 {
+ width:100%;
+ overflow:auto;
+ 
+}
+
 .pdes {
  padding-top: 30px;
  padding-botttom: 10px;
