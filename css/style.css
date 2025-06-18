@@ -418,10 +418,12 @@ div.container5 div {
      padding-top: 40px;
 }
 
+.contpedes {
+ padding-top: 30px;
+ padding-botttom: 20px;
+}
 
 .pdes {
- padding-top: 20px;
- padding-botttom: 20px;
  color: black; 
  font-size: 11px;
  text-align: center;
