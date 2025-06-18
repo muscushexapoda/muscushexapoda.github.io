@@ -406,7 +406,14 @@
      margin-top: 30px;
 }
 
-.ph5 {
+.hstory {
+  color: black;
+  font-size: 20px;
+ 
+
+}
+
+.ps5 {
  text-align: justify;
  color: black;
  font-size: 13px;
