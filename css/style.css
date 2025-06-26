@@ -436,6 +436,75 @@ div.container5 div {
  text-align: center;
 }
 
+/* Stili generali */
+#story {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+/* Titolo */
+.general {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Contenitore dei paragrafi */
+.container5 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Paragrafi */
+.ps5 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+/* Citazione finale */
+.contpedes {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pdes {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive: mobile & tablet */
+@media screen and (max-width: 768px) {
+  .container5 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ps5 {
+    flex: 1 1 100%;
+    font-size: 1rem;
+  }
+
+  .general {
+    font-size: 2rem;
+  }
+
+  #story {
+    padding: 1rem;
+  }
+}
+
+
  
 
 /* contact */
