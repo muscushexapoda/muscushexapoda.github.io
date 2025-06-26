@@ -440,8 +440,7 @@ div.container5 div {
 /* Contenitore principale */
 #story {
   padding: 1.5rem;
-  font-family: 'Georgia', serif;
-  background-color: #fdfdfd;
+  background-color: white;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -477,6 +476,7 @@ div.container5 div {
   line-height: 1.6;
   text-align: justify;
   margin: 0;
+ color: black;
 }
 
 /* Citazione finale */
@@ -487,7 +487,7 @@ div.container5 div {
 
 .pdes {
   font-size: 0.9rem;
-  color: #666;
+  color: black;
   font-style: italic;
 }
 
