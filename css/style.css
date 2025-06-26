@@ -316,6 +316,10 @@
          margin: 0 auto 0 auto !important;
          padding: 0 0 0 0 !important;
     }
+  .container5 { 
+          text-align: center !important;
+   
+  }
 }
  .slider {
      position: relative;
