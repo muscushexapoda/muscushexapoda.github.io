@@ -112,14 +112,14 @@
      background-color: #d0d4a4;
      color: white;
 }
- */
-/* NAVBAR con logo */
+
+/* NAVBAR con logo
  .navbar {
      width: 100%;
      background-color: #333;
      overflow: auto;
 }
-/* Navbar links */
+/* Navbar links 
  .navbar a {
      float: left;
      text-align: center;
@@ -131,23 +131,24 @@
  .imgnav {
      width: 20px;
 }
-/* Current/active navbar link */
+/* Current/active navbar link 
  a.active {
      background-color: #d0d4a4;
      color: #fff;
 }
-/* Navbar links on mouse-over */
+/* Navbar links on mouse-over
  .navbar a:hover {
      background-color: #d0d4a4;
      color: #333;
 }
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels 
  @media screen and (max-width: 500px) {
      .navbar a {
          float: none;
          display: block;
     }
 }
+ */
  .header-content h1 {
      position: absolute;
      top: 47%;
@@ -405,7 +406,37 @@
 
 /* story */
 
+/* .container5 {
+      width:100%;
+      overflow:auto;
+}
 
+div.container5 div {
+  width:50%;  
+  float:left;
+}
+
+ .ps5 {
+     text-align: justify;
+     color: black;
+     font-size: 17px;
+     padding-left: 60px;
+     padding-right: 80px;
+     padding-top: 40px;
+     padding-bottom: 10px;
+}
+
+.contpedes {
+ padding-top: 30px;
+ padding-botttom: 20px;
+}
+
+.pdes {
+ color: black; 
+ font-size: 11px;
+ text-align: center;
+}
+ */ 
 
 /* Contenitore principale */
 #story {
