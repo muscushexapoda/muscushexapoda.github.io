@@ -453,7 +453,7 @@ div.container5 div {
   margin-bottom: 1rem;
 }
 
-/* Contenitore dei paragrafi */
+/* Contenitore dei due testi */
 .container5 {
   display: flex;
   flex-direction: row;
@@ -483,7 +483,7 @@ div.container5 div {
   font-style: italic;
 }
 
-/* Responsive: mobile & tablet */
+/* Responsive: mobile */
 @media screen and (max-width: 768px) {
   .container5 {
     flex-direction: column;
@@ -500,9 +500,8 @@ div.container5 div {
   }
 
   #story {
-    padding: 1rem;
+    padd
   }
-}
 
 
  
