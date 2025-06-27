@@ -174,8 +174,7 @@
      height: 500px;
      border-radius: 20px;
      overflow: hidden;
-    /* Per assicurarsi che l'immagine non fuoriesca dai bordi arrotondati */
-     margin-left: auto;
+    /* Per assicurarsi che l'immagine non fuoriesca dai bordi arrotondati 
      margin-top: 80px;
      margin-bottom: 20px;
 }
@@ -196,13 +195,13 @@
      width: 100%;
      height: 100%;
      background-color: rgba(0, 0, 0, 0.2);
-    /* Sfondo semitrasparente nero */
+    /* Sfondo semitrasparente nero 
      flex-direction: column;
      justify-content: center;
      align-items: center;
      padding: 20px;
      box-sizing: border-box;
-    /* Per includere il padding nel calcolo delle dimensioni */
+    /* Per includere il padding nel calcolo delle dimensioni  
 }
  #identity h2, p {
      color: white;
@@ -325,7 +324,7 @@
  .slider {
      position: relative;
      height: 500px;
-    /* Larghezza massima dello slider */
+    /* Larghezza massima dello slider 
      margin: 0 auto;
      overflow: hidden;
      border-radius: 20px;
@@ -366,7 +365,71 @@
      border-radius: 20px;
      margin: 0 5px;
      cursor: pointer;
+/* identity */
+.species-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
 }
+
+.species-section h2,
+.species-section h3 {
+  color: #006c35;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.3rem;
+}
+
+.species-description p {
+  margin: 1rem 0;
+}
+
+.species-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.species-info th,
+.species-info td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.subspecies {
+  margin-top: 2rem;
+}
+
+.subspecies-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subspecies-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 200px;
+  text-align: center;
+}
+
+.subspecies-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.subspecies-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+  
+
+
 /* habitat */
 
  .container2 {
