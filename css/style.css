@@ -1,529 +1,534 @@
-/* INDEX */
- #index, indexhtml {
-     height: 100%;
-     margin: 0;
-     font-family: 'Arial', sans-serif;
-}
- * {
-     box-sizing: border-box;
-}
- #myVideo {
-     position: fixed;
-     right: 0;
-     bottom: 0;
-     min-width: 100%;
-     min-height: 100%;
-}
- a:link {
-     color: white;
-     background-color: transparent;
-     text-decoration: none;
-}
- a:visited {
-     color: white;
-     background-color: transparent;
-     text-decoration: none;
-}
- a:hover {
-     color: white;
-     background-color: transparent;
-}
- a:active {
-     color: white;
-     background-color: transparent;
-}
- .button {
-     background-color: rgb(0,0,0);
-    /* Fallback color */
-     background-color: rgba(0,0,0, 0.6);
-    /* Black w/opacity/see-through */
-     font-size: 28px;
-     padding: 15px;
-     width: 200px;
-     transition: all 0.5s;
-     cursor: pointer;
-     border-radius: 10px;
-     margin: 5px;
-     text-align: center;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     z-index: 2;
-     position: fixed;
-     text-align: center;
-}
- .button span {
-     cursor: pointer;
-     display: inline-block;
-     position: relative;
-     transition: 0.5s;
-}
- .button span:after {
-     content: '\00bb';
-     position: absolute;
-     opacity: 0;
-     top: 0;
-     right: -20px;
-     transition: 0.5s;
-}
- .button:hover span {
-     padding-right: 25px;
-}
- .button:hover span:after {
-     opacity: 1;
-     right: 0;
-}
-/* FINE INDEX */
-/* PAGINA 1 */
- #p1 {
-     font-family: "arial";
-     padding: 0;
-     margin: 0;
-}
- h1, h2, h3, h4, h5, h6 {
-     letter-spacing: 5px;
-}
-/* home */
- h1 {
-     position: relative;
-}
-/* Navbar .topnav {
-     background-color: #333;
-     overflow: hidden;
-}
- #imgnav {
-     padding: 14px 16px;
-     display: inline;
-     position: absolute;
-}
- .topnav a {
-     float: left;
-     color: #f2f2f2;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-     font-size: 17px;
-}
- .topnav a:hover {
-     background-color: #d0d4a4;
-     color: black;
-}
- .topnav a.active {
-     background-color: #d0d4a4;
-     color: white;
+/* === GLOBAL === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
 }
 
-/* NAVBAR con logo
- .navbar {
-     width: 100%;
-     background-color: #333;
-     overflow: auto;
+h1, h2, h3 {
+  margin: 0.5em 0;
 }
-/* Navbar links 
- .navbar a {
-     float: left;
-     text-align: center;
-     padding: 13px;
-     color: #f2f2f2;
-     text-decoration: none;
-     font-size: 17px;
-}
- .imgnav {
-     width: 20px;
-}
-/* Current/active navbar link 
- a.active {
-     background-color: #d0d4a4;
-     color: #fff;
-}
-/* Navbar links on mouse-over
- .navbar a:hover {
-     background-color: #d0d4a4;
-     color: #333;
-}
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels 
- @media screen and (max-width: 500px) {
-     .navbar a {
-         float: none;
-         display: block;
-    }
-}
- */
 
+/* LINGUA */
+
+#language-selection {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(167, 181, 122, 0.85);
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#language-selection a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#language-selection a:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 Versione mobile */
+@media (max-width: 600px) {
+  #language-selection {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    gap: 6px;
+    font-size: 13px; 
+  }
+
+  #language-selection a {
+    padding: 4px 6px;
+  }
+}
+
+/* === GENERALE === */
 .general {
-     padding-top: 30px;
-     color: darkgray;
-}
- @media screen and (max-width: 500px) {
-     .header-content{
-         position:relative !important;
-    }
-     .header-content h1 {
-         position: absolute !important;
-         top: 30% !important;
-         left: 5% !important;
-         transform: translate(0%, 0%) !important;
-         color: white !important;
-         text-align: left !important;
-         font-size: 16px !important;
-    }
- 
- 
-  .general {
-         margin: 0 auto 0 auto !important;
-         padding: 0 0 0 0 !important;
-    }
- }
-
- .header-content h1 {
-     position: absolute;
-     top: 47%;
-     left: 27%;
-     transform: translate(-50%, -50%);
-     color: white;
-     text-align: left;
-     font-size: 70px;
-}
- .header-content a {
-     top:120%;
-     left: 40px;
-     transform: translate(-50%, -50%);
-     color: white;
-     text-align: left;
-     font-size: 70px;
-}
-    
- 
-/* identity */
- #identity h3{
-     margin: 0;
+   color: #295518;
+  font-size: 2.7rem;
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0;
 }
 
+/* === HERO === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a7b57a;
+  padding: 8rem 4rem;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 5.5rem;
+  color: #295518;
+  padding-left: 60px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* === SPECIES SECTION (Carta d’identità) === 
+
+.identità {
+  background: #e0e8bd;
+}
 
 .species-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  
 }
 
-.species-section h2, {
-  color: #006c35;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.3rem;
-}
-
-.species-section .info {
-   text-align: center;
- 
-}
-
-
-.species-description p {
-  margin: 1rem 0;
- text-align: center;
+.species-section h2 {
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
 .species-info table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  text-align: left;
 }
 
 .species-info th,
 .species-info td {
   padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #8c9176;
+  vertical-align: top;
+}
+
+.species-info th {
+  width: 30%;
+}
+
+.species-info p {
+  text-align: justify;
+  margin: 0;
+}
+
+.species-text {
+  padding-top: 30px;
+}
+
+*/
+/* === SPECIES SECTION (Carta d’identità) === */
+
+.identità {
+ 
+}
+
+.species-section {
+  padding: 2rem 1rem;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 150px;
+}
+
+/* Contenitore flessibile per tabella + testo */
+.species-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; /* fallback per sicurezza */
+}
+
+/* Tabella */
+.species-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.species-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
   text-align: left;
 }
 
- 
- 
-
-/* habitat 
-
- .container2 {
-     display: flex;
-     align-items: center;
-     margin-bottom: 50px;
-     margin-top: 30px;
-     
-}
- .container2 img {
-     width: 100px;
-    /* Larghezza dell'immagine  
-     height: auto;
-    /* Altezza automatica per mantenere l'aspetto proporzionato  
-     margin-right: 20px;
-    /* Spazio tra l'immagine e il testo   
-}
- .ih {
-     border-radius: 20px;
-     width: 100px;
-    /* Larghezza dell'immagine 
-     height: auto;
-    /* Altezza automatica per mantenere l'aspetto proporzionato  
-     margin-right: 20px;
-    /* Spazio tra l'immagine e il testo 
-     margin-top: 60px;
-     margin-left: 55px;
-} 
- .ph {
-     text-align: justify;
-     color: black;
-     font-size: 20px;
-     padding-left: 40px;
-     padding-right: 60px;
-     padding-top: 60px;
-}
-*/
-
-/* Sezione habitat */
-
-.container2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px auto 50px;
-  max-width: 1000px;
-  padding: 20px;
+.species-info th,
+.species-info td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #8c9176;
+  vertical-align: top;
 }
 
-/* Immagine */
-.container2 img,
-.ih {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  object-fit: cover;
-  flex-shrink: 0;
+.species-info th {
+  width: 40%;
 }
 
-/* Testo */
-.ph {
-  text-align: justify;
-  color: black;
-  font-size: 20px;
-  padding: 0 20px;
-  max-width: 600px;
-}
-
-/* RESPONSIVE per mobile */
-@media (max-width: 768px) {
-  .container2 {
-    flex-direction: column-reverse; /* TESTO SOPRA, IMMAGINE SOTTO */
-    text-align: center;
-    padding: 10px;
-  }
-
-  .container2 img,
-  .ih {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-
-  .ph {
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-}
-
-/* story */
-
-/* .container5 {
-      width:100%;
-      overflow:auto;
-}
-
-div.container5 div {
-  width:50%;  
-  float:left;
-}
-
- .ps5 {
-     text-align: justify;
-     color: black;
-     font-size: 17px;
-     padding-left: 60px;
-     padding-right: 80px;
-     padding-top: 40px;
-     padding-bottom: 10px;
-}
-
-.contpedes {
- padding-top: 30px;
- padding-botttom: 20px;
-}
-
-.pdes {
- color: black; 
- font-size: 11px;
- text-align: center;
-}
- */ 
-
-/* Contenitore principale */
-#story {
-  padding: 1.5rem;
-  background-color: white;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-/* Titolo */
-.general {
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-/* Contenitore dei blocchi */
-.container5 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* CENTRA i figli anche quando sono uno sotto l'altro */
-  gap: 2rem;
-}
-
-/* Box dei paragrafi */
-.box {
-  flex: 1 1 45%;
-  max-width: 600px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Paragrafi */
-.ps5 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  font-size: 1.0rem;
-  line-height: 1.6;
+.species-info p {
   text-align: justify;
   margin: 0;
-  color: black !important;
 }
 
-/* Citazione finale */
-.contpedes {
-  margin-top: 2rem;
-  text-align: center;
+/* Testo accanto alla tabella */
+.species-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: justify;
+}
+
+.species-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: center; /* <-- Centro orizzontale */
+ 
+}
+
+
+/* Titoli allineati a sinistra */
+.species-section h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+ 
+ 
+ 
+
+ 
+/* === HABITAT (terza sezione) === */
+
+.habitat {
+ 
+}
+
+
+.habitat-content {
+  display: flex;
+  align-items: center; /* ⬅️ allinea verticalmente */
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 170px;
+  padding-top: 80px;
+}
+
+.habitat-image {
+  flex: 0 0 40%;
+}
+
+.habitat-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.habitat-text {
+  flex: 1;
+  font-size: 1.3rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ⬅️ centra verticalmente il contenuto */
+  height: 100%; /* utile per allineamento */
+}
+
+/* === STORIA (quarta sezione) === */
+
+.storia {
+   
+}
+
+.storia-columns {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 2rem;
+  border-bottom: 2px solid #9b9b9b;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
+  text-align: justify;
 }
 
 .pdes {
-  font-size: 0.9rem;
-  color: black !important;
-  font-style: italic;
+  text-align: center;
+  font-size: small;
+  padding-bottom: 50px;
 }
 
-/* MOBILE: blocchi uno sotto l’altro, larghi e centrati */
-@media screen and (max-width: 768px) {
-  .container5 {
+ 
+/* SEZIONE 5 - Finale */
+.finale {
+   background: #a7b57a;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.finale-top {
+  display: flex;
+  align-items: center;         /* Centra verticalmente */
+  justify-content: center;     /* Centra orizzontalmente */
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 140px;
+  padding-bottom: 0;
+}
+
+.finale-text {
+  text-align: left;
+}
+
+.final-h1 {
+  font-size: 5rem;
+  color: #004d26;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.final-h2 {
+  font-size:2.5rem;
+    color: #295518;
+  margin-top: 1rem;
+}
+
+.finale-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Parole sotto: CONOSCI, PROTEGGI, CONDIVIDI */
+.final-p {
+  font-size: 2rem;
+  color: #004d26;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.final-p strong {
+  font-weight: bold;
+}
+
+
+/* === SIDEBAR === 
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sidebar-item {
+  display: inline-block;
+  margin: 10px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar-item a {
+  opacity: 0.5;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.sidebar-item a i:hover {
+  color: #333;
+  transform: scale(1.3);
+} */
+
+/* === SIDEBAR === */
+.sidebar {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sidebar-item {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar-item a {
+  opacity: 0.5;
+  color: #333;
+  transition: transform 0.3s, opacity 0.3s;
+  display: inline-block;
+}
+
+.sidebar-item a:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  color: #333;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+   background: #ffffff;
+
+ 
+}
+
+::-webkit-scrollbar-thumb {
+   background: #a7b57a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* === RESPONSIVE (MOBILE) === */
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
-    align-items: center; /* CENTRA anche su mobile */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    padding-left: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .species-section {
+    width: 90%;
+    font-size: 1.1em;
+  }
+
+  .species-info th,
+  .species-info td {
+    display: block;
+    width: 100%;
+  }
+
+   .species-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .species-info,
+  .species-text {
+    width: 100%;
+  }
+
+  
+
+  /* HABITAAAAAAT */
+
+ .habitat-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .habitat-image {
+    width: 100%;
+  }
+
+  .habitat-text {
+    justify-content: center;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 0 10px;
+  }
+ 
+
+  .storia-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    width: 90%;
+  }
+
+.finale-top {
+    flex-direction: column-reverse; /* immagine sotto su mobile */
+    text-align: center;
     padding: 0;
   }
 
-  .box {
-    flex: 1 1 100%;
-    max-width: 95%; /* OCCUPA quasi tutto lo schermo */
+  .finale-text {
+    text-align: center;
+  }
+
+  .final-h1 {
+    font-size: 3rem;
+  }
+
+  .final-h2 {
+    font-size: 2rem;
+  }
+
+  .finale-image img {
+    width: 200px;
+  }
+
+  .final-p {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.8em;
     padding: 0;
   }
 
   .general {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
-  #story {
-    padding: 1rem;
+  .sidebar-item {
+    display: none;
+    font-size: 24px;
+    margin: 8px;
   }
 }
- 
-
-/* contact */
- .hcont2 {
-     padding-left: 50px;
-     padding-top: 25px;
-     font-size: 90px;
-     color: #d0d4a4;
-     text-align: left;
-}
- .hcont {
-     text-align: center;
-     font-size: 30px;
-     color: #d0d4a4;
-     text-align: left;
-     padding-top: 0px;
-     padding-left: 50px;
-     padding-bottom: 70px;
-}
- .pcont {
-     text-align: center;
-     font-size: 40px;
-     color: #d0d4a4;
-     padding-bottom: 50px;
-}
- .pcont strong {
-     color: #a6b56b;
-     padding-right: 80px;
-     padding-left: 80px;
-}
- .endimg {
-     float: right !important;
-     width: 250px !important;
-     height: 250px !important;
-     margin-top: 80px !important;
-     margin-right: 165px !important;
-     margin-left: auto !important;
-     text-align: right !important;
-}
- .endimg a:hover {
-     opacity: 0.5;
-}
-/* siderbar */
- .sidebar {
-     position: fixed;
-     bottom: 0;
-     left: 50%;
-     transform: translateX(-50%);
-}
- .sidebar-item {
-     display: inline-block;
-     margin: 10px;
-     font-size: 30px;
-     color: #333;
-     cursor: pointer;
-}
- .sidebar-item a {
-     opacity: 0.5;
-     color: #333;
-     cursor: pointer;
-     transition: transform 0.3s;
-}
- .sidebar-item a i:hover {
-     color: #333;
-     transform: scale(1.3);
-}
-/* width */
- ::-webkit-scrollbar {
-     width: 8px;
-}
-/* Track */
- ::-webkit-scrollbar-track {
-     background: #fff;
-}
-/* Handle */
- ::-webkit-scrollbar-thumb {
-     background: #d0d4a4;
-}
-/* Handle on hover */
- ::-webkit-scrollbar-thumb:hover {
-     background: #555;
-}
-/* FINE PAGINA 1 */
- 
