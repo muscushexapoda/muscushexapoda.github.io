@@ -221,9 +221,7 @@ h1, h2, h3 {
 */
 /* === SPECIES SECTION (Carta d’identità) === */
 
-.identità {
  
-}
 
 .species-section {
   padding: 2rem 1rem;
@@ -299,9 +297,7 @@ h1, h2, h3 {
  
 /* === HABITAT (terza sezione) === */
 
-.habitat {
  
-}
 
 
 .habitat-content {
@@ -336,10 +332,8 @@ h1, h2, h3 {
 
 /* === STORIA (quarta sezione) === */
 
-.storia {
-   
-}
-
+ 
+ 
 .storia-columns {
   font-size: 1.1rem;
   display: flex;
