@@ -149,6 +149,33 @@
     }
 }
  */
+
+.general {
+     padding-left: 60px;
+     padding-top: 30px;
+     color: darkgray;
+}
+ @media screen and (max-width: 500px) {
+     .header-content{
+         position:relative !important;
+    }
+     .header-content h1 {
+         position: absolute !important;
+         top: 30% !important;
+         left: 5% !important;
+         transform: translate(0%, 0%) !important;
+         color: white !important;
+         text-align: left !important;
+         font-size: 16px !important;
+    }
+     .imgnav {
+         display: inline !important;
+    }
+     .navbar a {
+         float: none;
+         display: block !important;
+    }
+
  .header-content h1 {
      position: absolute;
      top: 47%;
@@ -167,8 +194,12 @@
      font-size: 70px;
 }
     
-
+ 
 /* identity */
+ #identity h3{
+     margin: 0;
+}
+
 .species-section {
   max-width: 900px;
   margin: 2rem auto;
