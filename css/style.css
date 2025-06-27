@@ -186,6 +186,7 @@
 
 .species-description p {
   margin: 1rem 0;
+ text-align: center;
 }
 
 .species-info table {
@@ -201,37 +202,8 @@
   text-align: left;
 }
 
-.subspecies {
-  margin-top: 2rem;
-}
-
-.subspecies-grid {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.subspecies-card {
-  background: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0.5rem;
-  width: 200px;
-  text-align: center;
-}
-
-.subspecies-card img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.subspecies-card p {
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
-  
-
+ 
+ 
 
 /* habitat */
 
