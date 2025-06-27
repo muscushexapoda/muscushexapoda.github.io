@@ -1,157 +1,94 @@
 <!DOCTYPE html>
-<html id="p1">
-
+<html lang="it">
 <head>
-    <title>Muscus Hexapoda</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/musco.png">
+    <title>Muscus Hexapoda</title>
 </head>
+<body>
 
-<body id="p1">
-
-    <!-- Navbar (sit on top)	
-<div class="topnav" style="letter-spacing:4px;">
-  <a id="imgnav" href="index.html"><img src="img/musco.png" style="width: 2%;" ></a>
-  <a class="active" href="#home"><strong>Musco</strong></a>
-  <a href="p3.html">Origini Musco</a>
-  <a href="p2.html">Storie e Leggende</a>	 
-</div> 
-	-->
-
- <!--  <div class="navbar" style="letter-spacing:4px;">
-        <a href="index.html"><img class="imgnav" src="img/musco.png"></a>
-        <a href="#home" class="active"><strong>MUSCO</strong></a>
-        <a href="p2.html">LEGGENDE</a>
-        <a href="p3.html">ORIGINE</a>
-    </div>
-	-->
-
-    <!-- Header -->
-    <header id="home">
-
-        <div class="header-content">
-            <img src="img/sfondo.png" width="100%">
-            <h1>CONOSCIAMO<br>IL MUSCO</h1>
-            <div style="margin: 24px 0;">
-            </div>
-        </div>
-    </header>
-
-    <!-- identity section 
-    <div id="identity">
-        <h1 class="general">IDENTITÀ</h1>
+   <div id="language-selection">
+      <a href="?lang=it">Italiano</a> | 
+      <a href="?lang=en">English</a>
+      <a href="?lang=pl">Polski</a>
     </div>
 
-    <section class="content">
-        <div class="container">
-            <div class="content">
-                <img src="img/Carta_didentita.png">
-
-            </div>
-        </div>
-
-        <section class="slider">
-
-            <div class="slide">
-                <img src="img/riproduzione.png" style="width: 400px; height: 500px;">
-            </div>
-            <div class="slides">
-                <div class="slide">
-                    <img src="img/nutrizione.png" style="width: 400px; height: 500px;">
-                </div>
-
-                <div class="slide">
-                    <img src="img/comunicazione.png" style="width: 400px; height: 500px;">
-                </div>
-                <div class="slide">
-                    <img src="img/difesa.png" style="width: 400px; height: 500px;">
-                </div>
-
-                <div class="controls">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-
-            </div>
-        </section>
-    </section>
--->
-
-	<!-- identity section -->
-
-     <div id="identity">
-        <div>
-            <h1 class="general">IDENTITÀ</h1><br>
-        </div>
-    <section class="species-section">
-    <div class="species-info">
-      <h2>Carta d'identità</h2>
-      <table>
-        <tr>
-          <th>Classe</th>
-          <td>Mammalia</td>
-        </tr>
-        <tr>
-          <th>Ordine</th>
-          <td>Artiodactyla</td>
-        </tr>
-        <tr>
-          <th>Famiglia</th>
-          <td>Erinaceidae</td>
-        </tr>
-      <tr>
-        <th>Genere</th>
-        <td>Muscus</td>
-      </tr>
-      <tr>
-        <th>Specie</th>
-        <td>Hexapoda</td>
-      </tr>
-      <tr>
-        <th>Sottospecie</th>
-        <td>Romanicus</td>
-      </tr>
-      <tr>
-        <th>Nome comune</th>
-        <td>Musco</td>
-      </tr>
-      </table>
-    </div>
-    </div>
-
-      <h2 class="info"> Informazioni</h2>
-    <div class="species-description">
-      <p>La giraffa è il mammifero più alto del pianeta, con un collo lungo che le permette di raggiungere le foglie in cima agli alberi. Vive principalmente nelle savane africane.</p>
-    </div>
-
-  </section>
-	
-    <!-- Habitat-->
-    <div id="habitat">
-        <div>
-            <h1 class="general">HABITAT</h1><br>
-        </div>
-        <div class="container2">
-            <img class="ih" src="img/2h.webp" style="width:35%">
-            <p class="ph">Muscus Hexapoda si trova esclusivamente nei parchi e giardini di Roma. L'abbondanza di vegetazione in questi spazi verdi urbani fornisce cibo e riparo in abbondanza per la specie. Il suo clima ideale è quello mediterraneo con il suo variare di estati calde e secche e inverni miti e piovosi.
-            </p>
-        </div>
-    </div>
-
-    <!-- Story Section --> 	
-	
-         <div id="story"> 
-  <div>
-    <h1 class="general">STORIA</h1>
+<!-- Sezione 1: Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1 data-lang="know-musco">CONOSCIAMO <br> IL MUSCO </h1>
   </div>
+  <div class="hero-image">
+    <img src="img/p_musco.png" alt="Immagine del musco">
+  </div>
+</section>
 
-  <div class="container5">
-    <div class="box">
-      <p class="ps5">
-        Nell'antico cuore di Roma, circondato dai suoi giardini segreti, si narra di una storia avvolta nella magia. Un giorno, 
+<!-- Sezione 2: Identità -->
+<section id="identity" class="identità">
+  <h2 class="general" data-lang="identity">IDENTITÀ</h2>
+  <div class="species-section">
+    <div class="species-layout">
+      <!-- Tabella -->
+      <div class="species-info">
+        <h2 class="species-title" data-lang="identity-card">Carta d'identità</h2>
+        <table>
+          <tr>
+            <th data-lang="class">Classe</th><td>Mammalia</td>
+          </tr>
+          <tr>
+            <th data-lang="order">Ordine</th><td>Artiodactyla</td>
+          </tr>
+          <tr>
+            <th data-lang="family">Famiglia</th><td>Erinaceidae</td>
+          </tr>
+          <tr>
+            <th data-lang="genus">Genere</th><td>Muscus</td>
+          </tr>
+          <tr>
+            <th data-lang="species">Specie</th><td>Hexapoda</td>
+          </tr>
+          <tr>
+            <th data-lang="subspecies">Sottospecie</th><td>Romanicus</td>
+          </tr>
+          <tr>
+            <th data-lang="common-name">Nome comune</th><td>Musco</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Testo informativo -->
+      <div class="species-text">
+        <h2 class="species-title" data-lang="information">Informazioni</h2>
+        <p class="species-p" data-lang="description">
+         Il Muscus Hexapoda è un animale solitario che comunica attraverso vocalizzazioni come grugniti e sibili, utilizzati per attrarre i compagni durante l'accoppiamento e per avvertire dei predatori. Il linguaggio del corpo e il marcamento del territorio sono altre forme di comunicazione. L'olfatto acuto gli permette di trovare cibo, identificare i propri cuccioli e localizzare minacce. La stagione riproduttiva si svolge in primavera, da marzo a maggio. Durante questo periodo, i maschi competono per l'attenzione delle femmine, danzando e marcando il territorio. Dopo sei mesi di gestazione, le femmine partoriscono un singolo cucciolo, che cresce sotto la loro cura. Il Muscus Hexapoda ha un pelo denso che gli permette di mimetizzarsi con la vegetazione. È un corridore veloce e agile, in grado di muoversi anche nei terreni difficili. I suoi predatori principali sono volpi, gufi e serpenti. L'alimentazione del Muscus Hexapoda è onnivora, composta principalmente da frutta, verdura ed erbe, come cicoria, mele e rosmarino. Mangia occasionalmente insetti per soddisfare le sue esigenze nutrizionali e si nutre soprattutto durante il giorno.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione 3: Habitat -->
+<section id="habitat" class="habitat">
+  <h2 class="general" data-lang="habitat">HABITAT</h2>
+  <div class="habitat-content">
+    <div class="habitat-image">
+      <img src="img/exsnia.webp" alt="Habitat del musco">
+    </div>
+    <div class="habitat-text">
+      <p data-lang="habitat-description">Sapevi che l’Ex-SNIA è il luogo dove è presente la più grande colonia di muschi conosciuta?  È un ambiente estremamente favorevole alla vita di diverse specie: 358 specie vegetali spontanee,  133 specie coltivate e quasi novanta specie di avifauna. Gli esperti credono che il musco si sia insediato all’Ex-SNIA negli anni ’90 subito dopo l’incidente che ha causato l’allagamento della piana.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sezione 4: Storia -->
+<section id="story" class="storia">
+  <h2 class="general" data-lang="story">STORIA</h2>
+  <div class="storia-columns">
+    <div class="col">
+      <p data-lang="story-text">Nell'antico cuore di Roma, circondato dai suoi giardini segreti, si narra di una storia avvolta nella magia. Un giorno, 
 		un viandante giunse a Roma da terre remote, portando con sé il peso di una malattia misteriosa: era debole e afflitto, 
 		tormentato da una forza malevola che nessuna medicina all’ora conosciuta poteva sconfiggere. Disperato, si inoltrò nei 
 		parchi della città alla ricerca di una risposta. Fu lì che il Musco, con il suo manto di muschio dorato, avvertendo la 
@@ -165,50 +102,140 @@
 		dal male che lo aveva afflitto, il viandante si alzò e tornò ai suoi alloggi; incredulo, come se si fosse 
 		appena risvegliato da un sogno. La notizia della miracolosa guarigione si diffuse rapidamente tra le strade di Roma.
 	        La gente iniziò a cercare il Musco quando la malattia sembrava invincibile, sperando nel suo potere unico di connettersi 
-	        con la natura per curare anche le piaghe più profonde.
-      </p>
-    </div>
-
-    <div class="box">
-      <p class="ps5">
-         Il Muscus Hexapoda divenne così il simbolo della guarigione straordinaria, la forza vivente capace di sconfiggere ogni malattia con l'essenza stessa della terra. 
+	        con la natura per curare anche le piaghe più profonde. Il Muscus Hexapoda divenne così il simbolo della guarigione straordinaria, la forza vivente capace di sconfiggere ogni malattia con l'essenza stessa della terra. 
 	       Tuttavia, le persone, desiderose di beneficiare della magia curativa del Musco, iniziarono a cercarlo con sempre maggior frequenza. 
 	       Il ritmo dei loro passi risuonava tra gli alberi, mentre la curiosità si tramutava in una vera e propria caccia. Le sue tane segrete, una volta rifugi sicuri, 
 	       furono scoperte e sradicate dai disperati cercatori, avidi di guarigione. Il Musco, essendo un animale solitario e sensibile, fu sottoposto a una pressione insostenibile.
 	       La sua costante ricerca lo portò alla diffidenza e, ancor di più, all’isolamento. Il Muscus Hexapoda si trovò accerchiato e vulnerabile. 
 	       Il suo numero diminuì drasticamente, fino a che la sua presenza nei parchi romani fu così rara che, in breve tempo, si raccontava di lui come di una leggenda.
 	       Ironicamente, le stesse persone che cercavano il Musco per beneficiare della sua magia riuscirono, involontariamente o meno, a spingerlo sull'orlo dell'estinzione. 
-	       Il Musco vide la sua vita minacciata proprio da coloro che chiedevano il suo aiuto. 
-           <br>
+	       Il Musco vide la sua vita minacciata proprio da coloro che chiedevano il suo aiuto. <br>
 		<br>
 		<strong>La leggenda del Musco divenne il racconto amaro di come la sete umana di miracoli possa rendere ciechi al dolore altrui,
-	        facendoci dimenticare l’unico legame innato che abbiamo, quello con la Natura.</strong>
-      </p>
+	        facendoci dimenticare l’unico legame innato che abbiamo, quello con la Natura.</strong></p>
     </div>
   </div>
-
-  <div class="contpedes"> 
-    <hr>
-    <p class="pdes"> Testo tratto da <em>Storia del Musco</em>, D. Trifan, Roma, 2024</p>
+  <div class="contpedes">
+    <p class="pdes" data-lang="story-footer">Testo tratto da <em>Storia del Musco</em>, D. Trifan, Roma, 2024</p>
   </div>
-</div>
+</section>
 
-	       
-    <!-- Contact Section -->
-
-    <div id="info">
-        <div class="endimg">
-           <img src="img/musco.png" style="max-width:100%;">
-        </div>
-        <h1 class="hcont2">AIUTACI A <br>SALVAGUARDARE <br>LA SPECIE</h1><br>
-        <h2 class="hcont">Puoi aiutarci con piccoli e semplici gesti</h2>
-        <p class="pcont">
-            <strong>CONOSCI</strong>
-            <strong>PROTEGGI</strong>
-            <strong>CONDIVIDI</strong></p>
+<!-- Sezione 5: Finale -->
+<section id="info" class="finale">
+  <div class="finale-top">
+    <div class="finale-text">
+      <h1 class="final-h1" data-lang="help-save">AIUTACI A <br>SALVAGUARDARE <br>LA SPECIE</h1><br>
+      <h2 class="final-h2" data-lang="small-gestures">con piccoli e semplici gesti</h2>
     </div>
+    <div class="finale-image">
+      <img src="img/musco.png" alt="Musco in natura">
+    </div>
+  </div>
+  <p class="final-p">
+    <strong data-lang="know">CONOSCI</strong>
+    <strong data-lang="protect">PROTEGGI</strong>
+    <strong data-lang="share">CONDIVIDI</strong>
+  </p>
+</section>
 
-    <!-- sidebar -->
+<script>
+
+const translations = {
+  it: {
+    "know-musco": "CONOSCIAMO <br> IL MUSCO",
+    "identity": "IDENTITÀ",
+    "identity-card": "Carta d'identità",
+    "class": "Classe",
+    "order": "Ordine",
+    "family": "Famiglia",
+    "genus": "Genere",
+    "species": "Specie",
+    "subspecies": "Sottospecie",
+    "common-name": "Nome comune",
+    "information": "Informazioni",
+    "description": "Il Muscus Hexapoda è un animale solitario che comunica attraverso vocalizzazioni come grugniti e sibili, utilizzati per attrarre i compagni durante l'accoppiamento e per avvertire dei predatori. Il linguaggio del corpo e il marcamento del territorio sono altre forme di comunicazione. L'olfatto acuto gli permette di trovare cibo, identificare i propri cuccioli e localizzare minacce. La stagione riproduttiva si svolge in primavera, da marzo a maggio. Durante questo periodo, i maschi competono per l'attenzione delle femmine, danzando e marcando il territorio. Dopo sei mesi di gestazione, le femmine partoriscono un singolo cucciolo, che cresce sotto la loro cura. Il Muscus Hexapoda ha un pelo denso che gli permette di mimetizzarsi con la vegetazione. È un corridore veloce e agile, in grado di muoversi anche nei terreni difficili. I suoi predatori principali sono volpi, gufi e serpenti. L'alimentazione del Muscus Hexapoda è onnivora, composta principalmente da frutta, verdura ed erbe, come cicoria, mele e rosmarino. Mangia occasionalmente insetti per soddisfare le sue esigenze nutrizionali e si nutre soprattutto durante il giorno.",
+    "habitat": "HABITAT",
+    "habitat-description": "Sapevi che l’Ex-SNIA è il luogo dove è presente la più grande colonia di muschi conosciuta?  È un ambiente estremamente favorevole alla vita di diverse specie: 358 specie vegetali spontanee,  133 specie coltivate e quasi novanta specie di avifauna. Gli esperti credono che il musco si sia insediato all’Ex-SNIA negli anni ’90 subito dopo l’incidente che ha causato l’allagamento della piana.",
+    "story": "STORIA",
+    "story-text": "Nell'antico cuore di Roma, circondato dai suoi giardini segreti, si narra di una storia avvolta nella magia. Un giorno, un viandante giunse a Roma da terre remote, portando con sé il peso di una malattia misteriosa: era debole e afflitto, tormentato da una forza malevola che nessuna medicina all’ora conosciuta poteva sconfiggere. Disperato, si inoltrò nei parchi della città alla ricerca di una risposta. Fu lì che il Musco, con il suo manto di muschio dorato, avvertendo la malattia del viandante, lo avvicinò. La creatura intonò un canto ancestrale, una melodia che risvegliò il potere sopito della natura. Le foglie e i fiori danzavano con l'energia vitale della terra e tutt’intorno nascevano germogli verdi. Con uno sguardo compassionevole, il Musco riconobbe la forza oscura della malattia. Con le sue zampe toccò leggermente il corpo sofferente del viandante, canalizzando l'essenza curativa della terra attraverso di lui. Il viandante, stretto nella sua morsa benefica, sentì la malattia sgretolarsi come tufo al vento. L’uomo non avrebbe saputo dire quanto tempo era passato. Ricordava soltanto che il canto dell’animale si intensificò per poi interrompersi bruscamente, lasciandolo solo in un angolo fiorito. Rinvigorito e libero dal male che lo aveva afflitto, il viandante si alzò e tornò ai suoi alloggi; incredulo, come se si fosse appena risvegliato da un sogno. La notizia della miracolosa guarigione si diffuse rapidamente tra le strade di Roma. La gente iniziò a cercare il Musco quando la malattia sembrava invincibile, sperando nel suo potere unico di connettersi con la natura per curare anche le piaghe più profonde. Il Muscus Hexapoda divenne così il simbolo della guarigione straordinaria, la forza vivente capace di sconfiggere ogni malattia con l'essenza stessa della terra. Tuttavia, le persone, desiderose di beneficiare della magia curativa del Musco, iniziarono a cercarlo con sempre maggior frequenza. Il ritmo dei loro passi risuonava tra gli alberi, mentre la curiosità si tramutava in una vera e propria caccia. Le sue tane segrete, una volta rifugi sicuri, furono scoperte e sradicate dai disperati cercatori, avidi di guarigione. Il Musco, essendo un animale solitario e sensibile, fu sottoposto a una pressione insostenibile. La sua costante ricerca lo portò alla diffidenza e, ancor di più, all’isolamento. Il Muscus Hexapoda si trovò accerchiato e vulnerabile. Il suo numero diminuì drasticamente, fino a che la sua presenza nei parchi romani fu così rara che, in breve tempo, si raccontava di lui come di una leggenda. Ironicamente, le stesse persone che cercavano il Musco per beneficiare della sua magia riuscirono, involontariamente o meno, a spingerlo sull'orlo dell'estinzione. <br> <br> <strong> Il Musco vide la sua vita minacciata proprio da coloro che chiedevano il suo aiuto.  La leggenda del Musco divenne il racconto amaro di come la sete umana di miracoli possa rendere ciechi al dolore altrui, facendoci dimenticare l’unico legame innato che abbiamo, quello con la Natura. </strong>",
+    "story-footer": "Testo tratto da <em>Storia del Musco</em>, D. Trifan, Roma, 2024",
+    "help-save": "AIUTACI A <br>SALVAGUARDARE <br>LA SPECIE",
+    "small-gestures": "con piccoli e semplici gesti",
+    "know": "CONOSCI",
+    "protect": "PROTEGGI",
+    "share": "CONDIVIDI"
+  },
+  en: {
+    "know-musco": "LET'S MEET <br> THE MUSCO",
+    "identity": "IDENTITY",
+    "identity-card": "Identity Card",
+    "class": "Class",
+    "order": "Order",
+    "family": "Family",
+    "genus": "Genus",
+    "species": "Species",
+    "subspecies": "Subspecies",
+    "common-name": "Common Name",
+    "information": "Information",
+    "description": "Muscus hexapoda is a solitary animal that communicates through vocalisations such as grunts and hisses, used to attract mates during mating and to warn of predators. Body language and territory marking are other forms of communication. Their acute sense of smell enables them to find food, identify their cubs and locate threats. The breeding season takes place in spring, from March to May. During this period, males compete for the attention of females by dancing and marking their territory. After six months of gestation, the females give birth to a single cub, which grows under their care. The Muscus Hexapoda has dense fur that allows it to blend in with the vegetation. It is a fast and agile runner, able to move even in difficult terrain. Its main predators are foxes, owls and snakes. The diet of the Muscus Hexapoda is omnivorous, consisting mainly of fruit, vegetables and herbs, such as chicory, apples and rosemary. It occasionally eats insects to satisfy its nutritional needs and feeds mainly during the day.",
+    "habitat": "HABITAT",
+    "habitat-description": "Did you know that the Ex-SNIA is home to the largest known moss colony?  It is an extremely favourable environment for the life of various species: 358 wild plant species, 133 cultivated species and almost ninety species of birdlife. Experts believe that mosses settled at the Ex-SNIA in the 1990s immediately after the accident that caused the flooding of the plain.",
+    "story": "STORY",
+    "story-text": "In the ancient heart of Rome, surrounded by its secret gardens, a story is told that is shrouded in magic. One day, a traveller arrived in Rome from distant lands, carrying with him the burden of a mysterious illness: he was weak and afflicted, tormented by a malevolent force that no medicine known at the time could defeat. Desperate, he wandered the city's parks in search of an answer. It was there that the Musco, with its mantle of golden moss, sensing the traveller's illness, approached him. The creature intoned an ancestral song, a melody that awakened the dormant power of nature. Leaves and flowers danced with the life energy of the earth and all around them sprouted green shoots. With a compassionate look, the Musco recognised the dark force of the disease. With his paws he lightly touched the wayfarer's suffering body, channelling the healing essence of the earth through him. The traveller, caught in its beneficent grip, felt the disease crumble like tufa in the wind. The man could not tell how much time had passed. He only remembered that the animal's song intensified and then abruptly stopped, leaving him alone in a flowery corner. Invigorated and free of the evil that had afflicted him, the traveller got up and returned to his quarters; incredulous, as if he had just awoken from a dream. News of the miraculous healing spread quickly through the streets of Rome. People began to seek out the Muscus when illness seemed invincible, hoping for its unique power to connect with nature to heal even the deepest sores. The Muscus Hexapoda thus became the symbol of extraordinary healing, the living force capable of defeating all illnesses with the very essence of the earth. However, people, eager to benefit from the healing magic of the Muscus, began to seek it out with increasing frequency. The rhythm of their footsteps resounded through the trees, as curiosity turned to hunting. Its secret dens, once safe havens, were discovered and eradicated by the desperate seekers, eager for healing. The Musco, being a solitary and sensitive animal, was subjected to unbearable pressure. Its constant search led it to distrust and, even more so, to isolation. The Muscus Hexapoda found itself surrounded and vulnerable. Its numbers dwindled dramatically, until its presence in Roman parks was so rare that, before long, it was being spoken of as a legend. Ironically, the same people who sought out the Muscovy to benefit from his magic managed, unintentionally or not, to push him to the brink of extinction. <br> <br> <strong> The Musco saw his life threatened by the very people who asked for his help.  The Musco legend became the bitter tale of how the human thirst for miracles can blind us to the pain of others, making us forget the only innate bond we have, that with Nature. </strong> ",
+    "story-footer": "Text from <em>Story of the Musco</em>, D. Trifan, Rome, 2024",
+    "help-save": "HELP US <br>SAVE <br>THE SPECIES",
+    "small-gestures": "with small and simple gestures",
+    "know": "KNOW",
+    "protect": "PROTECT",
+    "share": "SHARE"
+  }, 
+
+  pl: {
+  "know-musco": "POZNAJMY <br> MUSCO",
+  "identity": "TOŻSAMOŚĆ",
+  "identity-card": "Karta tożsamości",
+  "class": "Klasa",
+  "order": "Rząd",
+  "family": "Rodzina",
+  "genus": "Rodzaj",
+  "species": "Gatunek",
+  "subspecies": "Podgatunek",
+  "common-name": "Nazwa zwyczajowa",
+  "information": "Informacje",
+  "description": "Muscus Hexapoda to samotne zwierzę, które komunikuje się za pomocą wokalizacji, takich jak chrząknięcia i syki, używane do przyciągania partnerów podczas godów i ostrzegania przed drapieżnikami. Język ciała i oznaczanie terytorium to inne formy komunikacji. Wyostrzony węch pozwala mu znajdować pożywienie, rozpoznawać własne młode i lokalizować zagrożenia. Sezon rozrodczy przypada na wiosnę, od marca do maja. W tym czasie samce rywalizują o uwagę samic, tańcząc i oznaczając swoje terytorium. Po sześciu miesiącach ciąży samica rodzi jedno młode, które wychowuje samodzielnie. Muscus Hexapoda ma gęste futro, które pozwala mu kamuflować się wśród roślinności. Jest szybkim i zwinnym biegaczem, zdolnym poruszać się po trudnym terenie. Jego głównymi drapieżnikami są lisy, sowy i węże. Muscus Hexapoda jest wszystkożerny – żywi się głównie owocami, warzywami i ziołami, takimi jak cykoria, jabłka i rozmaryn. Sporadycznie zjada owady, by uzupełnić dietę i zazwyczaj żeruje w ciągu dnia.",
+  "habitat": "ŚRODOWISKO",
+  "habitat-description": "Czy wiesz, że Ex-SNIA jest domem dla największej znanej kolonii mchu?  Jest to niezwykle korzystne środowisko dla życia różnych gatunków: 358 gatunków dzikich roślin, 133 gatunki uprawne i prawie dziewięćdziesiąt gatunków ptaków. Eksperci uważają, że mchy osiedliły się na terenie byłej SSE w latach 90. ubiegłego wieku, zaraz po wypadku, który spowodował zalanie równiny.",
+  "story": "HISTORIA",
+  "story-text": "W starożytnym sercu Rzymu, otoczonym tajemniczymi ogrodami, opowiadana jest historia owiana magią. Pewnego dnia podróżnik przybył do Rzymu z odległych krain, niosąc ze sobą ciężar tajemniczej choroby: był słaby i dotknięty, dręczony przez złowrogą siłę, której żadne znane wówczas lekarstwo nie mogło pokonać. Zdesperowany wędrował po miejskich parkach w poszukiwaniu odpowiedzi. To właśnie tam Musco, z płaszczem złotego mchu, wyczuwając chorobę podróżnika, zbliżył się do niego. Stworzenie zaintonowało pieśń przodków, melodię, która obudziła uśpioną moc natury. Liście i kwiaty zatańczyły z energią życiową ziemi, a wokół nich wyrosły zielone pędy. Musco ze współczującym spojrzeniem rozpoznał mroczną siłę choroby. Delikatnie dotknął łapami cierpiącego ciała wędrowca, przekazując mu uzdrawiającą esencję ziemi. Podróżnik, złapany w jej dobroczynny uścisk, poczuł, jak choroba rozpada się niczym tuf na wietrze. Mężczyzna nie potrafił powiedzieć, ile czasu minęło. Pamiętał tylko, że pieśń zwierzęcia nasiliła się, a potem nagle ucichła, pozostawiając go samego w kwiecistym zakątku. Ożywiony i wolny od zła, które go dotknęło, podróżnik wstał i wrócił do swojej kwatery, niedowierzając, jakby właśnie obudził się ze snu. Wieść o cudownym uzdrowieniu szybko rozeszła się po ulicach Rzymu.W starożytnym sercu Rzymu, otoczonym jego sekretnymi ogrodami, krąży opowieść spowita magią. Ludzie zaczęli szukać Muscus, gdy choroba wydawała się niezwyciężona, mając nadzieję na jego wyjątkową moc łączenia się z naturą w celu wyleczenia nawet najgłębszych ran. W ten sposób Muscus Hexapoda stał się symbolem niezwykłego uzdrawiania, żywą siłą zdolną do pokonania wszystkich chorób za pomocą samej esencji ziemi. Jednak ludzie, chcąc skorzystać z uzdrawiającej magii Muscusa, zaczęli go szukać coraz częściej. Rytm ich kroków rozbrzmiewał wśród drzew, a ciekawość przerodziła się w polowanie. Jego tajne nory, niegdyś bezpieczne schronienia, zostały odkryte i zlikwidowane przez zdesperowanych poszukiwaczy, żądnych uzdrowienia. Musco, będąc samotnym i wrażliwym zwierzęciem, był poddawany nieznośnej presji. Ciągłe poszukiwania doprowadziły go do nieufności, a jeszcze bardziej do izolacji. Muscus Hexapoda znalazł się otoczony i bezbronny. Jego liczebność dramatycznie spadła, aż jego obecność w rzymskich parkach stała się tak rzadka, że wkrótce zaczęto mówić o nim jak o legendzie. Jak na ironię, ci sami ludzie, którzy szukali Musco, aby skorzystać z jego magii, zdołali, nieumyślnie lub nie, zepchnąć go na skraj wyginięcia. <br> <br> <strong> Musco zobaczył, że jego życie jest zagrożone przez ludzi, którzy szukali jego pomocy.  Legenda o Musco stała się gorzką opowieścią o tym, jak ludzkie pragnienie cudów może zaślepić nas na ból innych, sprawiając, że zapominamy o jedynej wrodzonej więzi, jaką mamy z Naturą. </strong>",
+  "story-footer": "Tekst zaczerpnięty z <em>Historia Musco</em>, D. Trifan, Rzym, 2024",
+  "help-save": "POMÓŻ NAM <br>CHRONIĆ <br>GATUNEK",
+  "small-gestures": "poprzez małe i proste gesty",
+  "know": "POZNAJ",
+  "protect": "CHROŃ",
+  "share": "PODZIEL SIĘ"
+}
+
+
+};
+
+function changeLanguage(lang) {
+  document.querySelectorAll('[data-lang]').forEach(function(element) {
+    const key = element.getAttribute('data-lang');
+    if (translations[lang] && translations[lang][key]) {
+      element.innerHTML = translations[lang][key];
+    }
+  });
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang') || 'it';
+changeLanguage(lang);
+
+ </script>
+
+
+
+      <!-- sidebar -->
     <div id="sidebar" class="sidebar">
         <div class="sidebar-item">
             <a href="#home"><i class="fa fa-home"></i></a>
@@ -227,46 +254,5 @@
         </div>
     </div>
 
-    <!-- End page content -->
-
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentSlide++;
-            if (currentSlide >= slides.length) {
-                currentSlide = 0;
-            }
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide--;
-            if (currentSlide < 0) {
-                currentSlide = slides.length - 1;
-            }
-            showSlide(currentSlide);
-        }
-
-        nextButton.addEventListener('click', nextSlide);
-        prevButton.addEventListener('click', prevSlide);
-
-        showSlide(currentSlide);
-    </script>
-
 </body>
-
 </html>
