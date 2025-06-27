@@ -151,7 +151,6 @@
  */
 
 .general {
-     padding-left: 60px;
      padding-top: 30px;
      color: darkgray;
 }
@@ -200,6 +199,7 @@
      margin: 0;
 }
 
+
 .species-section {
   max-width: 900px;
   margin: 2rem auto;
@@ -208,12 +208,17 @@
   border-radius: 8px;
 }
 
-.species-section h2,
-.species-section h3 {
+.species-section h2, {
   color: #006c35;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.3rem;
 }
+
+.species-section .info {
+   text-align: center;
+ 
+}
+
 
 .species-description p {
   margin: 1rem 0;
