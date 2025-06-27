@@ -118,20 +118,6 @@ h1, h2, h3 {
   transform: scale(1.1);
 }
 
-/* 📱 Versione mobile */
-@media (max-width: 600px) {
-  #language-selection {
-    top: 10px;
-    right: 10px;
-    padding: 6px 10px;
-    gap: 6px;
-    font-size: 13px; 
-  }
-
-  #language-selection a {
-    padding: 4px 6px;
-  }
-}
 
 /* === GENERALE === */
 .general {
@@ -495,8 +481,24 @@ h1, h2, h3 {
   background: #555;
 }
 
+
 /* === RESPONSIVE (MOBILE) === */
 @media (max-width: 768px) {
+
+
+    #language-selection {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    gap: 6px;
+    font-size: 13px; 
+  }
+
+  #language-selection a {
+    padding: 4px 6px;
+  }
+
+
   .hero {
     flex-direction: column;
     padding: 4rem 2rem;
