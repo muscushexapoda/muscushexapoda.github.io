@@ -168,13 +168,13 @@
          text-align: left !important;
          font-size: 16px !important;
     }
-     .imgnav {
-         display: inline !important;
+ 
+ 
+  .general {
+         margin: 0 auto 0 auto !important;
+         padding: 0 0 0 0 !important;
     }
-     .navbar a {
-         float: none;
-         display: block !important;
-    }
+ }
 
  .header-content h1 {
      position: absolute;
