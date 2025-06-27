@@ -412,13 +412,13 @@ div.container5 div {
      padding-left: 80px;
 }
  .endimg {
-     float: right;
-     width: 250px;
-     height: 250px;
-     margin-top: 80px;
-     margin-right: 165px;
-     margin-left: auto;
-     text-align: right;
+     float: right !important;
+     width: 250px !important;
+     height: 250px !important;
+     margin-top: 80px !important;
+     margin-right: 165px !important;
+     margin-left: auto !important;
+     text-align: right !important;
 }
  .endimg a:hover {
      opacity: 0.5;
